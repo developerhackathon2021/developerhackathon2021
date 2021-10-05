@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "43c827a2-726a-4408-a539-ca2e2e9253f0",
+		"name": "Hackathon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[Step1] Create destination server",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BEARER_TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"type": "text",
+						"value": "{{IMS_ORG_ID}}"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{API_KEY}}"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-sandbox-name",
+						"type": "text",
+						"value": "{{SANDBOX_NAME}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"name\":\"<REPLACE_ME_WITH_YOUR_NICKNAME>-test-server\",\n   \"destinationServerType\":\"URL_BASED\",\n   \"urlBasedDestination\":{\n      \"url\":{\n         \"templatingStrategy\":\"PEBBLE_V1\",\n         \"value\":\"<REPLACE_ME_WITH_VALUE_FROM_https://webhook.site>\"\n      }\n   },\n   \"httpTemplate\":{\n      \"httpMethod\":\"POST\",\n      \"requestBody\":{\n         \"templatingStrategy\":\"PEBBLE_V1\",\n         \"value\":\"{{input.profiles | raw}}\"\n      },\n      \"contentType\":\"application/json\"\n   },\n   \"qos\": {\n   \t  \"name\": \"freeform\"\n   }\n}"
+				},
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/activation/authoring/destination-servers",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"activation",
+						"authoring",
+						"destination-servers"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "_instance.flowSpecId==5bdca4fc-8b95-894a-d278-9471c4968517",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Step2] Get destination server",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BEARER_TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMS_ORG_ID}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{API_KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-sandbox-name",
+						"value": "{{SANDBOX_NAME}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/activation/authoring/destination-servers/<REPLACE_ME_WITH_INSTANCE_ID_FROM_STEP_1_RESPONSE>",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"activation",
+						"authoring",
+						"destination-servers",
+						"<REPLACE_ME_WITH_INSTANCE_ID_FROM_STEP_1_RESPONSE>"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "_instance.flowSpecId==5bdca4fc-8b95-894a-d278-9471c4968517",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Step3] Create destination",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"pm.collectionVariables.set(\"destinationid\",jsonData.instanceId);",
+							"pm.collectionVariables.set(\"destConfigId\",jsonData.destConfigId);",
+							"pm.collectionVariables.set(\"inputSchemaId\",jsonData.inputSchemaId);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BEARER_TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMS_ORG_ID}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{API_KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-sandbox-name",
+						"value": "{{SANDBOX_NAME}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"<REPLACE_ME_WITH_YOUR_NICKNAME>-test-destination\",\n    \"description\": \"<REPLACE_ME_WITH_YOUR_NICKNAME>-test-destination-description\",\n    \"status\": \"TEST\",\n    \"customerAuthenticationConfigurations\": [\n        {\n            \"authType\": \"BEARER\"\n        }\n    ],\n    \"customerDataFields\": [],\n    \"uiAttributes\": {\n        \"documentationLink\": \"https://www.adobe.com/go/destinations-moviestar-en\",\n        \"category\": \"mobile\",\n        \"connectionType\": \"Server-to-server\",\n        \"frequency\": \"Streaming\"\n    },\n    \"identityNamespaces\": {\n        \"emailMarketingIds\": {\n            \"acceptsAttributes\": true,\n            \"acceptsCustomNamespaces\": true,\n            \"acceptedGlobalNamespaces\": {\n                \"Email\": {}\n            }\n        }\n    },\n    \"segmentMappingConfig\": {\n        \"mapExperiencePlatformSegmentName\": true,\n        \"mapExperiencePlatformSegmentId\": false,\n        \"mapUserInput\": false\n    },\n    \"schemaConfig\": {\n        \"profileRequired\": false,\n        \"segmentRequired\": true,\n        \"identityRequired\": true\n    },\n    \"aggregation\": {\n        \"aggregationType\": \"BEST_EFFORT\",\n        \"bestEffortAggregation\": {\n            \"maxUsersPerRequest\": 10,\n            \"splitUserById\": false\n        }\n    },\n    \"destinationDelivery\": [\n        {\n            \"authenticationRule\": \"CUSTOMER_AUTHENTICATION\",\n            \"destinationServerId\": \"<REPLACE_ME_WITH_INSTSANCE_ID_FROM_STEP_1_RESPONSE>\"\n        }\n    ],\n    \"backfillHistoricalProfileData\": true\n}"
+				},
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/activation/authoring/destinations",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"activation",
+						"authoring",
+						"destinations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Step4] Get destination",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BEARER_TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMS_ORG_ID}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{API_KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-sandbox-name",
+						"value": "{{SANDBOX_NAME}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/activation/authoring/destinations/<REPLACE_ME_WITH_INSTANCE_ID_FROM_STEP_3_RESPONSE>",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"activation",
+						"authoring",
+						"destinations",
+						"<REPLACE_ME_WITH_INSTANCE_ID_FROM_STEP_3_RESPONSE>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Step5] Test destination",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BEARER_TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMS_ORG_ID}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{API_KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-sandbox-name",
+						"value": "{{SANDBOX_NAME}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/activation/authoring/testing/destinationInstance/<REPLACE_ME_WITH_DESTINATION_INSTANCE_ID_FROM_AEP_UI>",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"activation",
+						"authoring",
+						"testing",
+						"destinationInstance",
+						"<REPLACE_ME_WITH_DESTINATION_INSTANCE_ID_FROM_AEP_UI>"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "destserverid",
+			"value": "275c6ad7-02f0-4ae2-9fba-0209382b1bc4"
+		},
+		{
+			"key": "destConfigId",
+			"value": "f0376cb1-6dbd-43ea-9206-675dcccc7427"
+		},
+		{
+			"key": "destinationid",
+			"value": "db951301-347b-43b2-af58-73bdf4fbf456"
+		},
+		{
+			"key": "inputSchemaId",
+			"value": "ce50f0e4835943a9ab7c61855c892244"
+		}
+	]
+}
