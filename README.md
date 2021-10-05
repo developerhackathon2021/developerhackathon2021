@@ -3,6 +3,11 @@
 ## Purpose
 ### `Create a custom destination using destination-sdk and activate it using some generated profiles`
 
+## Table of Contents
+- [Purpose](#purpose)
+- [Prerequisites](#prerequisites)
+- [Hackathon Steps](#hackathon-steps)
+
 ## Prerequisites:
 
 1. Install [Postman](https://www.postman.com/downloads/) if you don't have it already
