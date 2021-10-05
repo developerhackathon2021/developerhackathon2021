@@ -73,7 +73,9 @@
     ![Get Destination Instance Id](pictures/hackStep15_0.png?raw=true)  
 16. Go back to Postman and open `[Step5] Test destination`, replace placeholder from the url with the destination_instance_id you got in previous step and execute it;
     ![Test Destination Instance Id](pictures/hackStep16_0.png?raw=true)
-    ![Test Destination Instance Id Response](pictures/hackStep16_1.png?raw=true)  
+    ![Test Destination Instance Id Response](pictures/hackStep16_1.png?raw=true)
+17. Check exported profiles from webhook tab
+    ![Check Webhook](pictures/hackStep17_0.png?raw=true)
     
 
 # Thanks for joining this journey!
