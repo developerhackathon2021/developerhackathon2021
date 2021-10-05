@@ -19,11 +19,12 @@
    ![Postman Environment Variables Import](pictures/postmanEnvVars2.png?raw=true)
    ![Postman Environment Variables Drag & Drop](pictures/postmanEnvVars3.png?raw=true)
    ![Postman Environment Variables Finish Import](pictures/postmanEnvVars4.png?raw=true)
-   ![Postman Environment Variables Finish Import](pictures/postmanEnvVars5.png?raw=true)  
+   ![Postman Environment Variables Finish Import](pictures/postmanEnvVars5.png?raw=true)
 
-6. Replace Environment Variables values from Postman with the ones from the chat  
-   ![Postman Environment Variables Finish Import](pictures/postmanReplaceEnvVars.png?raw=true)
-   ![Postman Environment Variables Finish Import](pictures/postmanReplaceEnvVars2.png?raw=true)  
+6. Replace Environment Variables values from Postman with the ones from the chat, save and select them  
+   ![Postman Environment Variables Replace](pictures/postmanReplaceEnvVars.png?raw=true)
+   ![Postman Environment Variables Save](pictures/postmanReplaceEnvVars2.png?raw=true)
+   ![Postman Environment Variables Finish Choose_EnvVars](pictures/postmanReplaceEnvVars3.png?raw=true)
 
 7. Get a webhook from: https://webhook.site (it should be something like: https://webhook.site/351e6452-9187-49f3-9588-d2cf47be2666) and leave that tab opened.
    ![Postman Environment Variables Finish Import](pictures/webhookGenerator.png?raw=true)    
