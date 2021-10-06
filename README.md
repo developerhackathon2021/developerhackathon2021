@@ -65,7 +65,7 @@
    * `description` -> your custom value   
    * `destinationDelivery.destinationServerId` -> the `instanceId` value copied at step 3.  
    ![Create a Destination](pictures/hackStep3.png?raw=true)
-7. Run this `POST` API call.  
+7. Execute this `POST` API call.  
    From the successful response (201, Created) `Body` copy the `instanceId` value, since we will use it in the next step. 
    ![Create a Destination Response](pictures/hackStep33.png?raw=true)
 8. To check your destination was correctly created, open `[Step4] Get destination` API call.   
@@ -110,13 +110,18 @@
      ![Set Source](pictures/hackStep100.png?raw=true)
 12. Click `Next` and then `Finish` buttons from top right corner.
     ![Click Finish](pictures/hackStep14_0.png?raw=true)  
-20. From the url, get destination instance id (Ex: https://...destination/browse/`8b4deb36-e2d0-40a5-8742-2b42444fff72`/...)
+13. Your are almost done!   
+    From the browser URL, copy `destinationInstanceId` value (Ex: https://experience.adobe.com/#/.../browse/`5534012a-a7a4-41aa-8edd-d8c0b2958ba3`/...)
     ![Get Destination Instance Id](pictures/hackStep15_0.png?raw=true)  
-21. Go back to Postman and open `[Step5] Test destination`, replace placeholder from the url with the destination_instance_id you got in previous step and execute it;
+14. Go back to Postman and open `[Step5] Test destination` API call.   
+    Replace placeholder dummy value from the url with the `destinationInstanceId` value copied in the step above(13).
     ![Test Destination Instance Id](pictures/hackStep16_0.png?raw=true)
+15. Execute this `POST` API call.       
+    Your output response should be similar to the one below - you've just got the final confirmation your first destination is configured properly!  
     ![Test Destination Instance Id Response](pictures/hackStep16_1.png?raw=true)
-22. Check exported profiles from webhook tab
+16. Last step from this hackathon concludes with checking the exported profiles in the webhook you configured a while back.
     ![Check Webhook](pictures/hackStep17_0.png?raw=true)
     
 
-# Thanks for joining this journey!
+# We are DONE! 
+# Thank you for your partnership today during our Destination SDK Hackathon!
