@@ -16,14 +16,12 @@
 4. Import in Postman APIs Collection (saved at step 2 above)
    ![Postman Collection Import](pictures/postmanCollection1.png?raw=true)
    ![Postman Collection Drag & Drop](pictures/postmanCollection2.png?raw=true)
-   ![Postman Collection Finish Import](pictures/postmanCollection3.png?raw=true)
    ![Postman Collection Overview](pictures/postmanCollection4.png?raw=true)  
 
 5. Import Environment Variables  
    ![Postman Environment Variables](pictures/postmanEnvVars1.png?raw=true)
    ![Postman Environment Variables Import](pictures/postmanEnvVars2.png?raw=true)
    ![Postman Environment Variables Drag & Drop](pictures/postmanEnvVars3.png?raw=true)
-   ![Postman Environment Variables Finish Import](pictures/postmanEnvVars4.png?raw=true)
    ![Postman Environment Variables Finish Import](pictures/postmanEnvVars5.png?raw=true)
 
 6. Replace Environment Variables values from Postman with the ones from the chat, save and select them  
