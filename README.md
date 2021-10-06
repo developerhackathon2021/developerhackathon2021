@@ -3,7 +3,8 @@
 ## Table of Contents
 - [Goal](#goal)
 - [Prerequisites](#prerequisites)
-- [Configuring and validating your first destination with Destination SDK](#configuring-and-validating-your-first-destination-with-destination-sdk)
+- [Configure your first destination with Destination SDK](#configure-your-first-destination-with-destination-sdk)
+- [Validate the newly created destination](#validate-the-newly-created-destination)
 
 ## Goal
 ### `Configure a new destination using Adobe Experience Platform Destination SDK and validate the configuration`
@@ -41,7 +42,8 @@
    
 ### Now, your setup is complete! Let's go ahead and create your first Destination using Adobe Experience Platform Destination SDK! 
 
-## Configuring and validating your first destination with Destination SDK
+## Configure your first destination with Destination SDK
+
 1. Go to Postman and open `[Step1] Create destination server` call.   
    Replace these fields from the `Body`:   
    * `name` -> your custom value   
@@ -74,9 +76,11 @@
    Your output response should be similar to this one: 
    ![Get Destination Response](pictures/hackStep44.png?raw=true)  
   
-### Congratulations: your Destination has been created! Let's configure it through the UI!  
-  
-10. Go to your browser(Chrome preferably) and open [Adobe Experience Platform UI](https://experience.adobe.com).   
+### Congratulations: your first Destination has been successfully created!
+
+## Validate the newly created destination
+
+1. Go to your browser(Chrome preferably) and open [Adobe Experience Platform UI](https://experience.adobe.com).   
     Login using credentials shared in the chat.
 11. Go to `Destinations` tab
    ![Click Destinations](pictures/hackStep6.png?raw=true)  
