@@ -66,14 +66,13 @@
    * `destinationDelivery.destinationServerId` -> the `instanceId` value copied at step 3.  
    ![Create a Destination](pictures/hackStep3.png?raw=true)
 7. Run this `POST` API call.  
-   Your output response should be similar to this one - you've just created a destination that will show up in the mobile category from Adobe Experience Platform UI 
-   ![Create a Destination Response](pictures/hackStep33.png?raw=true)  
-   From the successful response (201, Created) `Body` copy the `instanceId` value, since we will use it in the next step.  
+   From the successful response (201, Created) `Body` copy the `instanceId` value, since we will use it in the next step. 
+   ![Create a Destination Response](pictures/hackStep33.png?raw=true)
 8. To check your destination was correctly created, open `[Step4] Get destination` API call.   
    Replace placeholder dummy value from the url with the `instanceId` value copied in the previous step(7).
    ![Get Destination](pictures/hackStep4.png?raw=true)
 9. Execute this `GET` API call.       
-   Your output response should be similar to this one: 
+   Your output response should be similar to the one below - you've just created a destination that will show up in the mobile category from Adobe Experience Platform UI 
    ![Get Destination Response](pictures/hackStep44.png?raw=true)  
   
 ### Congratulations: your first Destination has been successfully created!
