@@ -11,8 +11,8 @@
 ## Prerequisites:
 
 1. Install [Postman](https://www.postman.com/downloads/) if you don't have it already
-2. Download [Postman collection](https://github.com/developerhackathon2021/developerhackathon2021/blob/main/Hackathon.postman_collection.json)
-3. Download [Postman Environment Variables](https://github.com/developerhackathon2021/developerhackathon2021/blob/main/Hackathon%202021%20Env%20Variables.postman_environment.json)
+2. Go to Github [Postman collection](https://github.com/developerhackathon2021/developerhackathon2021/blob/main/Hackathon.postman_collection.json), `Copy Raw Content` (attach screenshot) and save it locally (in any text editor) as json
+3. Go to Github [Postman Environment Variables](https://github.com/developerhackathon2021/developerhackathon2021/blob/main/Hackathon%202021%20Env%20Variables.postman_environment.json) and `Copy Raw Content` (attach screenshot) and save it locally (in any text editor) as json
 4. Import Postman Collection
    ![Postman Collection Import](pictures/postmanCollection1.png?raw=true)
    ![Postman Collection Drag & Drop](pictures/postmanCollection2.png?raw=true)
