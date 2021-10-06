@@ -57,11 +57,11 @@
 5. Execute this `GET` API call.       
    Your output response should be similar to this one:
    ![Get a Destination Server Response](pictures/hackStep22.png?raw=true)  
-6. Open `[Step3] Create destination` call.     
-   In the Body call you need to replace : 
+6. Open `[Step3] Create destination` `POST` API call.     
+   In the `Body` you need to replace: 
    * `name` -> your custom value  
    * `description` -> your custom value   
-   * `destinationDelivery.destinationServerId` -> instanceId from the 3rd step.  
+   * `destinationDelivery.destinationServerId` -> the `instanceId` value copied at step 3.  
    ![Create a Destination](pictures/hackStep3.png?raw=true)
 7. Run this call.  
    Your output response should be similar to this:
