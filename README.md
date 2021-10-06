@@ -104,7 +104,7 @@
    * Press the arrow button next to `Source field`
      ![Set Target](pictures/hackStep999_1.png?raw=true)
    * Next, `Select identity namespace` option as `Source field` and pick `Hackathon namespace 1` value.
-    ![Set Source](pictures/hackStep999_3.png?raw=true)
+    ![Set Source](pictures/hackStep999_4.png?raw=true)
 11. Configure the `TARGET` field as follows:   
    * Press the button next to the `Target Field` and choose `emailMarketingIds`.
      ![Set Source](pictures/hackStep100.png?raw=true)
