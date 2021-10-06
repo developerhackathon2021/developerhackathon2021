@@ -100,12 +100,14 @@
 9. We reached the `Mapping` phase where you, as a partner, need to map customer data (identities, attributes) to your target destination.  
    Click the `Add new mapping` button:
    ![Add new Mapping](pictures/hackStep999_0.png?raw=true)
-10. Configure the `Source` and `Target` fields as follows:
+10. Configure the `SOURCE` field as follows:
    * Press the arrow button next to `Source field`
      ![Set Target](pictures/hackStep999_1.png?raw=true)
-   * `Select identity namespace` option as `Source field` and pick `Hackathon namespace 1` value.
+   * Next, `Select identity namespace` option as `Source field` and pick `Hackathon namespace 1` value.
     ![Set Source](pictures/hackStep999_3.png?raw=true)
+11. Configure the `TARGET` field as follows:   
    * Press the button next to the `Target Field` and choose `emailMarketingIds`.
+     ![Set Source](pictures/hackStep100.png?raw=true)
      
 19. Click `Finish` button
     ![Click Finish](pictures/hackStep14_0.png?raw=true)  
