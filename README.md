@@ -49,32 +49,40 @@
    * `name` -> your custom value   
    * `urlBasedDestination.url.value` -> copied from the webhook site you previously opened in browser (at 9th step from Preconditions).  
    ![Postman Environment Variables Finish Import](pictures/webHookGenerator2.png?raw=true)
+   <br/><br/>
 2. Your setup from step above should look like this
    ![Create a Destination Server](pictures/hackStep1.png?raw=true)
+   <br/><br/>
 3. Run this `POST` API call.  
-   From the successful response (201, Created) `Body` copy the `instanceId` value, since we will use it in the next step.  
+   From the successful response (201, Created) `Body` copy the `instanceId` value, since we will use it in the next step.
+   <br/><br/>
 4. To check your destination server was correctly created, open `[Step2] Get destination server` API call.  
    Replace placeholder dummy value from the url with the `instanceId` value copied in the previous step(3).
    ![Get a Destination Server](pictures/hackStep2.png?raw=true)
+   <br/><br/>
 5. Execute this `GET` API call.       
    Your output response should be similar to this one:
    ![Get a Destination Server Response](pictures/hackStep22.png?raw=true)
-   <br/><br/><br/>
+   <br/><br/>
 6. Open `[Step3] Create destination` `POST` API call.     
    In the `Body` you need to replace: 
    * `name` -> your custom value  
    * `description` -> your custom value   
    * `destinationDelivery.destinationServerId` -> the `instanceId` value copied at step 3.  
    ![Create a Destination](pictures/hackStep3.png?raw=true)
+    <br/><br/>
 7. Execute this `POST` API call.  
    From the successful response (201, Created) `Body` copy the `instanceId` value, since we will use it in the next step. 
    ![Create a Destination Response](pictures/hackStep33.png?raw=true)
+   <br/><br/>
 8. To check your destination was correctly created, open `[Step4] Get destination` API call.   
    Replace placeholder dummy value from the url with the `instanceId` value copied in the previous step(7).
    ![Get Destination](pictures/hackStep4.png?raw=true)
+   <br/><br/>
 9. Execute this `GET` API call.       
    Your output response should be similar to the one below - you've just created a destination that will show up in the mobile category from Adobe Experience Platform UI 
    ![Get Destination Response](pictures/hackStep44.png?raw=true)
+   <br/><br/>
 
 ## Validate the newly created destination
 
