@@ -108,8 +108,7 @@
 11. Configure the `TARGET` field as follows:   
    * Press the button next to the `Target Field` and choose `emailMarketingIds`.
      ![Set Source](pictures/hackStep100.png?raw=true)
-     
-19. Click `Finish` button
+12. Click `Next` and then `Finish` buttons from top right corner.
     ![Click Finish](pictures/hackStep14_0.png?raw=true)  
 20. From the url, get destination instance id (Ex: https://...destination/browse/`8b4deb36-e2d0-40a5-8742-2b42444fff72`/...)
     ![Get Destination Instance Id](pictures/hackStep15_0.png?raw=true)  
