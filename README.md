@@ -26,12 +26,16 @@
 6. Set `Hackathon 2021 Env Variables` as Environment Variable
    ![Postman Environment Variables Finish Choose_EnvVars](pictures/postmanReplaceEnvVars333.png?raw=true)
 
-7. Replace `BEARER_TOKEN` environment variable values(initial and current) with the string value from the chat. save and select them  
-   ![Postman Environment Variables Replace](pictures/postmanReplaceEnvVars.png?raw=true)
+7. Replace `BEARER_TOKEN` environment variable values (`INITIAL VALUE` and `CURRENT VALUE`) with the string value shared in the chat.  
+   ![Postman Environment Variables Replace](pictures/postmanReplaceEnvVars111.png?raw=true)
+   
+8. Repeat the same step as above (step 7) for `API_KEY` environment variable then Save.
    ![Postman Environment Variables Save](pictures/postmanReplaceEnvVars2.png?raw=true)
+
+Congratulations: your Postman setup is ready!
    
 
-8. Get a webhook from: https://webhook.site (it should be something like: https://webhook.site/351e6452-9187-49f3-9588-d2cf47be2666) and leave that tab opened.
+9. Get a webhook from: https://webhook.site (it should be something like: https://webhook.site/351e6452-9187-49f3-9588-d2cf47be2666) and leave that tab opened.
    ![Postman Environment Variables Finish Import](pictures/webhookGenerator.png?raw=true)    
 
 ## Hackathon Steps
