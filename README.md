@@ -92,9 +92,10 @@
    * `Name` -> <YOUR_CUSTOM_VALUE>-test-destination-instance
    * `Description` -> <YOUR_CUSTOM_VALUE>-test-destination-instance-description
     ![Set Name and Description](pictures/hackStep10.png?raw=true)  
-16. Do not select any of Marketing Actions, just press `Create` button
+7. In this demo we will skip this step (Marketing Actions), just click the `Next` button
     ![Set Data Governance](pictures/hackStep11_0.png?raw=true)
-17. Select `Hackathon segment 1` and press `Next` button
+8. We need to select the audience/segment which we previously defined for this demo to include all profiles with birth year equals to 1901.  
+   Choose `Hackathon segment 1` and press the `Next` button.  
     ![Set Segment](pictures/hackStep12_0.png?raw=true)
 18. Click `Add new mapping`. For `Source Field` let's choose from Identity Namespace `Hackathon namespace 1`. For `Target Field` let's choose `emailMarketingIds` and click `Next` button
     ![Add new Mapping](pictures/hackStep13_0.png?raw=true)
