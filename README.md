@@ -41,7 +41,7 @@ Congratulations: your Postman setup is ready!
 Now, your setup is complete! Let's go ahead and create your first Destination using Adobe Self Service Destination SDK! 
 
 ## Hackathon Steps
-1. Go to Postman and open `[Step1] Create destination server` call. 
+1. Go to Postman and open `[Step1] Create destination server` call.   
    Replace these fields from the `Body`: `name` -> your custom value and `urlBasedDestination.url.value` -> copied from the webhook site you previously opened in browser (at 9th step from Preconditions).
    ![Postman Environment Variables Finish Import](pictures/webHookGenerator2.png?raw=true)
 2. Your setup from step above should look like this
