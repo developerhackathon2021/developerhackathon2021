@@ -73,19 +73,18 @@
    ![Get Destination](pictures/hackStep4.png?raw=true)
 9. Execute this `GET` API call.       
    Your output response should be similar to the one below - you've just created a destination that will show up in the mobile category from Adobe Experience Platform UI 
-   ![Get Destination Response](pictures/hackStep44.png?raw=true)  
-  
-### Congratulations: your first Destination has been successfully created!
+   ![Get Destination Response](pictures/hackStep44.png?raw=true)
 
 ## Validate the newly created destination
 
 1. Go to your browser and open [Adobe Experience Platform UI](https://experience.adobe.com).   
     Login using credentials shared in the chat.
-11. Go to `Destinations` tab
+2. Go to `Destinations` tab
    ![Click Destinations](pictures/hackStep6.png?raw=true)  
-12. Go to Catalog tab
+3. Go to Catalog tab
    ![Click Catalog](pictures/hackStep7.png?raw=true)  
-13. Find your destination inside Mobile Engagement container (it should be something like: `<YOUR_NICKNAME>-test-destination`) and click on `Set up` button
+4. Find your destination inside Mobile Engagement category (it should have the name you created previously, something like: `<YOUR_CUSTOM_VALUE>-test-destination`).  
+   Click on `Set up` button
    ![Set up Destination](pictures/hackStep8.png?raw=true)  
 14. Set a dummy value in `Bearer token` input field and click `Connect to destination` button
    ![Set Authentication](pictures/hackStep9.png?raw=true)  
