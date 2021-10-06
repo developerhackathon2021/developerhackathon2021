@@ -110,7 +110,7 @@
      ![Set Source](pictures/hackStep100.png?raw=true)
 12. Click `Next` and then `Finish` buttons from top right corner.
     ![Click Finish](pictures/hackStep14_0.png?raw=true)  
-13. Your are almost done!   
+13. We are almost done!   
     From the browser URL, copy `destinationInstanceId` value (Ex: https://experience.adobe.com/#/.../browse/`5534012a-a7a4-41aa-8edd-d8c0b2958ba3`/...)
     ![Get Destination Instance Id](pictures/hackStep15_0.png?raw=true)  
 14. Go back to Postman and open `[Step5] Test destination` API call.   
