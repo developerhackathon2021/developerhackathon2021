@@ -43,7 +43,9 @@ Now, your setup is complete! Let's go ahead and create your first Destination us
 
 ## Configuring and validating your first destination with Destination SDK
 1. Go to Postman and open `[Step1] Create destination server` call.   
-   Replace these fields from the `Body`: `name` -> your custom value and `urlBasedDestination.url.value` -> copied from the webhook site you previously opened in browser (at 9th step from Preconditions).
+   Replace these fields from the `Body`:   
+   * `name` -> your custom value   
+   * `urlBasedDestination.url.value` -> copied from the webhook site you previously opened in browser (at 9th step from Preconditions).  
    ![Postman Environment Variables Finish Import](pictures/webHookGenerator2.png?raw=true)
 2. Your setup from step above should look like this
    ![Create a Destination Server](pictures/hackStep1.png?raw=true)
@@ -56,7 +58,10 @@ Now, your setup is complete! Let's go ahead and create your first Destination us
    Your output response should be similar to this:
    ![Get a Destination Server Response](pictures/hackStep22.png?raw=true)  
 6. Open `[Step3] Create destination` call.     
-   In the Body call you need to replace : name -> your custom value, description -> your custom value and destinationDelivery.destinationServerId -> instanceId from the 3rd step.
+   In the Body call you need to replace : 
+   * `name` -> your custom value  
+   * `description` -> your custom value   
+   * `destinationDelivery.destinationServerId` -> instanceId from the 3rd step.  
    ![Create a Destination](pictures/hackStep3.png?raw=true)
 7. Run this call.  
    Your output response should be similar to this:
