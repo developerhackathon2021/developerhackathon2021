@@ -11,22 +11,22 @@
 
 ## Prerequisites:
 
-1. Install [Postman](https://www.postman.com/downloads/) if you don't have it already
-2. Go to Github [Postman APIs Collection](https://github.com/developerhackathon2021/developerhackathon2021/blob/main/Hackathon.postman_collection.json), press `Copy Raw Content` button (attach screenshot) and save it locally (in any text editor) as json
-   ![Postman Collection Import](pictures/copyRawContentCollection.png?raw=true)
-3. Go to Github [Postman Environment Variables](https://github.com/developerhackathon2021/developerhackathon2021/blob/main/Hackathon%202021%20Env%20Variables.postman_environment.json), press `Copy Raw Content` button and save it locally (in any text editor) as json
+1. Install [Postman](https://www.postman.com/downloads/) if you don't have it already  
+2. Go to Github [Postman APIs Collection](https://github.com/developerhackathon2021/developerhackathon2021/blob/main/Hackathon.postman_collection.json), press `Copy Raw Content` button (attach screenshot) and save it locally (in any text editor) as json  
+   ![Postman Collection Import](pictures/copyRawContentCollection.png?raw=true)  
+3. Go to Github [Postman Environment Variables](https://github.com/developerhackathon2021/developerhackathon2021/blob/main/Hackathon%202021%20Env%20Variables.postman_environment.json), press `Copy Raw Content` button and save it locally (in any text editor) as json  
 4. Import in Postman APIs Collection (saved at step 2 above)
    ![Postman Collection Import](pictures/postmanCollection1.png?raw=true)
    ![Postman Collection Drag & Drop](pictures/postmanCollection2.png?raw=true)
-   ![Postman Collection Overview](pictures/postmanCollection4.png?raw=true)  
+   ![Postman Collection Overview](pictures/postmanCollection4.png?raw=true)    
 
 5. Import Environment Variables (saved at step 3 above)  
    ![Postman Environment Variables Import](pictures/postmanEnvVars2.png?raw=true)
    ![Postman Environment Variables Drag & Drop](pictures/postmanEnvVars3.png?raw=true)
-   ![Postman Environment Variables Finish Import](pictures/postmanEnvVars555.png?raw=true)
+   ![Postman Environment Variables Finish Import](pictures/postmanEnvVars555.png?raw=true)  
    
 6. Set `Hackathon 2021 Env Variables` as Environment Variable
-   ![Postman Environment Variables Finish Choose_EnvVars](pictures/postmanReplaceEnvVars333.png?raw=true)
+   ![Postman Environment Variables Finish Choose_EnvVars](pictures/postmanReplaceEnvVars333.png?raw=true)  
 
 7. Replace `BEARER_TOKEN` environment variable values (`INITIAL VALUE` and `CURRENT VALUE`) with the string value shared in the chat.  
    ![Postman Environment Variables Replace](pictures/postmanReplaceEnvVars111.png?raw=true)
