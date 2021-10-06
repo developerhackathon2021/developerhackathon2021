@@ -50,7 +50,7 @@
 2. Your setup from step above should look like this
    ![Create a Destination Server](pictures/hackStep1.png?raw=true)
 3. Run this `POST` API call.  
-   From the successful response (201, Created) body copy the `instanceId` value, since we will use it in the next step.
+   From the successful response (201, Created) `Body` copy the `instanceId` value, since we will use it in the next step.
 4. To check your destination server was correctly created, open `[Step2] Get destination server` API call.  
    Replace placeholder dummy value from the url with the `instanceId` value copied in the previous step(3).
    ![Get a Destination Server](pictures/hackStep2.png?raw=true)
@@ -63,15 +63,15 @@
    * `description` -> your custom value   
    * `destinationDelivery.destinationServerId` -> the `instanceId` value copied at step 3.  
    ![Create a Destination](pictures/hackStep3.png?raw=true)
-7. Run this call.  
-   Your output response should be similar to this:
+7. Run this `POST` API call.  
+   Your output response should be similar to this one:
    ![Create a Destination Response](pictures/hackStep33.png?raw=true)  
-   Save the instanceId from the response body, since we will use it in the next step.  
-8. Open `[Step4] Get destination` call.   
-   Replace placeholder from the url with instanceId from 7th step.
+   From the successful response (201, Created) `Body` copy the `instanceId` value, since we will use it in the next step.  
+8. To check your destination was correctly created, open `[Step4] Get destination` API call.   
+   Replace placeholder dummy value from the url with the `instanceId` value copied in the previous step(7).
    ![Get Destination](pictures/hackStep4.png?raw=true)
-9. Run this call.  
-   Your output response should be similar to this:  
+9. Execute this `GET` API call.       
+   Your output response should be similar to this one: 
    ![Get Destination Response](pictures/hackStep44.png?raw=true)  
   
 ### Congratulations: your Destination has been created! Let's configure it through the UI!  
