@@ -58,7 +58,10 @@
    ![Get a Destination Server](pictures/hackStep2.png?raw=true)
 5. Execute this `GET` API call.       
    Your output response should be similar to this one:
-   ![Get a Destination Server Response](pictures/hackStep22.png?raw=true)  
+   ![Get a Destination Server Response](pictures/hackStep22.png?raw=true)
+   
+
+
 6. Open `[Step3] Create destination` `POST` API call.     
    In the `Body` you need to replace: 
    * `name` -> your custom value  
