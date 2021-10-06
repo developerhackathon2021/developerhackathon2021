@@ -33,13 +33,13 @@
 8. Repeat the same step as above (step 7) for `API_KEY` environment variable then Save.
    ![Postman Environment Variables Save](pictures/postmanReplaceEnvVars2.png?raw=true)
 
-Congratulations: your Postman setup is ready!
+### Congratulations: your Postman setup is ready!
 
 9. Next, we need to configure a webhook using https://webhook.site to simulate a destination endpoint.
    Once you clicked the [webhook url](https://webhook.site) above, please leave the browser tab open.  
    ![Postman Environment Variables Finish Import](pictures/webHookGenerator1.png?raw=true)  
    
-Now, your setup is complete! Let's go ahead and create your first Destination using Adobe Experience Platform Destination SDK! 
+### Now, your setup is complete! Let's go ahead and create your first Destination using Adobe Experience Platform Destination SDK! 
 
 ## Configuring and validating your first destination with Destination SDK
 1. Go to Postman and open `[Step1] Create destination server` call.   
@@ -73,7 +73,11 @@ Now, your setup is complete! Let's go ahead and create your first Destination us
 9. Run this call.  
    Your output response should be similar to this:  
    ![Get Destination Response](pictures/hackStep44.png?raw=true)  
-10. Go to your browser(Chrome preferably) and open Adobe Experience Platform UI https://experience.adobe.com and login using credentials from the chat
+  
+### Congratulations: your Destination has been created! Let's configure it through the UI!  
+  
+10. Go to your browser(Chrome preferably) and open [Adobe Experience Platform UI](https://experience.adobe.com).   
+    Login using credentials shared in the chat.
 11. Go to `Destinations` tab
    ![Click Destinations](pictures/hackStep6.png?raw=true)  
 12. Go to Catalog tab
