@@ -21,7 +21,7 @@
 5. Import `Hackathon 2021 Env Variables` Environment Variables  
    ![Postman Environment Variables Import](pictures/postmanEnvVars2.png?raw=true)
    ![Postman Environment Variables Drag & Drop](pictures/postmanEnvVars3.png?raw=true)
-   ![Postman Environment Variables Finish Import](pictures/postmanEnvVars5.png?raw=true)
+   ![Postman Environment Variables Finish Import](pictures/postmanEnvVars555.png?raw=true)
    
 6. Set `Hackathon 2021 Env Variables` as Environment Variable
    ![Postman Environment Variables Finish Choose_EnvVars](pictures/postmanReplaceEnvVars333.png?raw=true)
