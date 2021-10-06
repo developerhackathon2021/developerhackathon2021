@@ -25,7 +25,8 @@
    ![Postman Environment Variables Finish Import](pictures/postmanEnvVars5.png?raw=true)
    
 6. Set `Hackathon 2021 Env Variables` as Environment Variable
-   ![Postman Environment Variables Finish Choose_EnvVars](pictures/postmanReplaceEnvVars3.png?raw=true)
+   ![Postman Environment Variables Finish Choose_EnvVars](pictures/postmanReplaceEnvVars333.png?raw=true)
+
 7. Replace `BEARER_TOKEN` environment variable values(initial and current) with the string value from the chat. save and select them  
    ![Postman Environment Variables Replace](pictures/postmanReplaceEnvVars.png?raw=true)
    ![Postman Environment Variables Save](pictures/postmanReplaceEnvVars2.png?raw=true)
