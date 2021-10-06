@@ -66,7 +66,7 @@
    * `destinationDelivery.destinationServerId` -> the `instanceId` value copied at step 3.  
    ![Create a Destination](pictures/hackStep3.png?raw=true)
 7. Run this `POST` API call.  
-   Your output response should be similar to this one:
+   Your output response should be similar to this one - you've just created a destination that will show up in the mobile category from Adobe Experience Platform UI 
    ![Create a Destination Response](pictures/hackStep33.png?raw=true)  
    From the successful response (201, Created) `Body` copy the `instanceId` value, since we will use it in the next step.  
 8. To check your destination was correctly created, open `[Step4] Get destination` API call.   
@@ -80,7 +80,7 @@
 
 ## Validate the newly created destination
 
-1. Go to your browser(Chrome preferably) and open [Adobe Experience Platform UI](https://experience.adobe.com).   
+1. Go to your browser and open [Adobe Experience Platform UI](https://experience.adobe.com).   
     Login using credentials shared in the chat.
 11. Go to `Destinations` tab
    ![Click Destinations](pictures/hackStep6.png?raw=true)  
