@@ -97,7 +97,8 @@
 8. We need to select the audience/segment which we previously defined for this demo to include all profiles with birth year equals to 1901.  
    Choose `Hackathon segment 1` and press the `Next` button.  
     ![Set Segment](pictures/hackStep12_0.png?raw=true)
-9. We reached the `Mapping` phase where you, as a partner, need to map customer data (identities, attributes) to your target destination.Click the `Add new mapping` button:
+9. We reached the `Mapping` phase where you, as a partner, need to map customer data (identities, attributes) to your target destination.  
+   Click the `Add new mapping` button:
    ![Add new Mapping](pictures/hackStep999_0.png?raw=true)
 10. Configure the `Source` and `Target` fields as follows:
    * Press the arrow button next to `Source field`
