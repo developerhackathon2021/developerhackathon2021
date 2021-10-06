@@ -1,7 +1,7 @@
 # Welcome to Developers Live : Hackathon
 
 ## Goal
-### `Configure a new destination using Adobe Experience Platform Destination SDK and validate the configuration`
+###`Configure a new destination using Adobe Experience Platform Destination SDK and validate the configuration`
 
 ## Table of Contents
 - [Purpose](#purpose)
