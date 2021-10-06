@@ -6,7 +6,7 @@
 ## Table of Contents
 - [Purpose](#purpose)
 - [Prerequisites](#prerequisites)
-- [Configuring and validating your first destination with Destination SDK](#hackathon-steps)
+- [Configuring and validating your first destination with Destination SDK](#configuring-and-validating-your-first-destination-with-destination-sdk)
 
 ## Prerequisites:
 
