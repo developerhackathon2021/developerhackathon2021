@@ -86,9 +86,11 @@
 4. Find your destination inside Mobile Engagement category (it should have the name you created previously, something like: `<YOUR_CUSTOM_VALUE>-test-destination`).  
    Click on `Set up` button
    ![Set up Destination](pictures/hackStep8.png?raw=true)  
-14. Set a dummy value in `Bearer token` input field and click `Connect to destination` button
+5. Next, for the demo purposes, you can add any dummy value in `Bearer token` input field and click `Connect to destination` button
    ![Set Authentication](pictures/hackStep9.png?raw=true)  
-15. Set a `Name`(<YOUR_NICKNAME>-test-destination-instance) and `Description`(<YOUR_NICKNAME>-test-destination-instance-description) in `Destination details` and click `Next` button
+6. In the `Destination details` section fill in the following fields with custom values and then press `Next` button: 
+   * `Name` -> <YOUR_CUSTOM_VALUE>-test-destination-instance
+   * `Description` -> <YOUR_CUSTOM_VALUE>-test-destination-instance-description
     ![Set Name and Description](pictures/hackStep10.png?raw=true)  
 16. Do not select any of Marketing Actions, just press `Create` button
     ![Set Data Governance](pictures/hackStep11_0.png?raw=true)
