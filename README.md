@@ -1,18 +1,19 @@
 # Welcome to Developers Live : Hackathon
 
-## Purpose
-### `Create a custom destination using destination-sdk and activate it using some generated profiles`
+## Goal
+### `Configure a new destination using Adobe Experience Platform Destination SDK and validate the configuration`
 
 ## Table of Contents
 - [Purpose](#purpose)
 - [Prerequisites](#prerequisites)
-- [Hackathon Steps](#hackathon-steps)
+- [Configuring and validating your first destination with Destination SDK](#hackathon-steps)
 
 ## Prerequisites:
 
 1. Install [Postman](https://www.postman.com/downloads/) if you don't have it already
 2. Go to Github [Postman APIs Collection](https://github.com/developerhackathon2021/developerhackathon2021/blob/main/Hackathon.postman_collection.json), press `Copy Raw Content` button (attach screenshot) and save it locally (in any text editor) as json
-3. Go to Github [Postman Environment Variables](https://github.com/developerhackathon2021/developerhackathon2021/blob/main/Hackathon%202021%20Env%20Variables.postman_environment.json), press `Copy Raw Content` button (attach screenshot) and save it locally (in any text editor) as json
+   ![Postman Collection Import](pictures/copyRawContentCollection.png?raw=true)
+3. Go to Github [Postman Environment Variables](https://github.com/developerhackathon2021/developerhackathon2021/blob/main/Hackathon%202021%20Env%20Variables.postman_environment.json), press `Copy Raw Content` button and save it locally (in any text editor) as json
 4. Import in Postman APIs Collection (saved at step 2 above)
    ![Postman Collection Import](pictures/postmanCollection1.png?raw=true)
    ![Postman Collection Drag & Drop](pictures/postmanCollection2.png?raw=true)
@@ -38,54 +39,63 @@ Congratulations: your Postman setup is ready!
    Once you clicked the [webhook url](https://webhook.site) above, please leave the browser tab open.  
    ![Postman Environment Variables Finish Import](pictures/webHookGenerator1.png?raw=true)  
    
-Now, your setup is complete! Let's go ahead and create your first Destination using Adobe Self Service Destination SDK! 
+Now, your setup is complete! Let's go ahead and create your first Destination using Adobe Experience Platform Destination SDK! 
 
-## Hackathon Steps
+## Configuring and validating your first destination with Destination SDK
 1. Go to Postman and open `[Step1] Create destination server` call.   
    Replace these fields from the `Body`: `name` -> your custom value and `urlBasedDestination.url.value` -> copied from the webhook site you previously opened in browser (at 9th step from Preconditions).
    ![Postman Environment Variables Finish Import](pictures/webHookGenerator2.png?raw=true)
 2. Your setup from step above should look like this
-   ![Create a Destination Server](pictures/hackStep1.png?raw=true)   
-   Run this call.
-   
-![Create a Destination Server Response](pictures/hackStep11.png?raw=true)  
-2. Open `[Step2] Get destination server` call, replace placeholder from the url and execute it
+   ![Create a Destination Server](pictures/hackStep1.png?raw=true)
+3. Run this call.  
+   Save the instanceId from the response body, since we will use it in the next step.
+4. Open `[Step2] Get destination server` call.  
+   Replace placeholder from the url with instanceId from the previous step.
    ![Get a Destination Server](pictures/hackStep2.png?raw=true)
+5. Execute this call.       
+   Your output response should be similar to this:
    ![Get a Destination Server Response](pictures/hackStep22.png?raw=true)  
-3. Open `[Step3] Create destination` call, replace in the body: name, description and destinationDelivery.destinationServerId and execute it
+6. Open `[Step3] Create destination` call.     
+   In the Body call you need to replace : name -> your custom value, description -> your custom value and destinationDelivery.destinationServerId -> instanceId from the 3rd step.
    ![Create a Destination](pictures/hackStep3.png?raw=true)
+7. Run this call.  
+   Your output response should be similar to this:
    ![Create a Destination Response](pictures/hackStep33.png?raw=true)  
-4. Open `[Step4] Get destination` call, replace  placeholder from the url and execute it
+   Save the instanceId from the response body, since we will use it in the next step.  
+8. Open `[Step4] Get destination` call.   
+   Replace placeholder from the url with instanceId from 7th step.
    ![Get Destination](pictures/hackStep4.png?raw=true)
+9. Run this call.  
+   Your output response should be similar to this:  
    ![Get Destination Response](pictures/hackStep44.png?raw=true)  
-5. Go to your browser(Chrome preferably) and open Adobe Experience Platform UI https://experience.adobe.com and login using credentials from the chat
-6. Go to `Destinations` tab
+10. Go to your browser(Chrome preferably) and open Adobe Experience Platform UI https://experience.adobe.com and login using credentials from the chat
+11. Go to `Destinations` tab
    ![Click Destinations](pictures/hackStep6.png?raw=true)  
-7. Go to Catalog tab
+12. Go to Catalog tab
    ![Click Catalog](pictures/hackStep7.png?raw=true)  
-8. Find your destination inside Mobile Engagement container (it should be something like: `<YOUR_NICKNAME>-test-destination`) and click on `Set up` button
+13. Find your destination inside Mobile Engagement container (it should be something like: `<YOUR_NICKNAME>-test-destination`) and click on `Set up` button
    ![Set up Destination](pictures/hackStep8.png?raw=true)  
-9. Set a dummy value in `Bearer token` input field and click `Connect to destination` button
+14. Set a dummy value in `Bearer token` input field and click `Connect to destination` button
    ![Set Authentication](pictures/hackStep9.png?raw=true)  
-10. Set a `Name`(<YOUR_NICKNAME>-test-destination-instance) and `Description`(<YOUR_NICKNAME>-test-destination-instance-description) in `Destination details` and click `Next` button
+15. Set a `Name`(<YOUR_NICKNAME>-test-destination-instance) and `Description`(<YOUR_NICKNAME>-test-destination-instance-description) in `Destination details` and click `Next` button
     ![Set Name and Description](pictures/hackStep10.png?raw=true)  
-11. Do not select any of Marketing Actions, just press `Create` button
+16. Do not select any of Marketing Actions, just press `Create` button
     ![Set Data Governance](pictures/hackStep11_0.png?raw=true)
-12. Select `Hackathon segment 1` and press `Next` button
+17. Select `Hackathon segment 1` and press `Next` button
     ![Set Segment](pictures/hackStep12_0.png?raw=true)
-13. Click `Add new mapping`. For `Source Field` let's choose from Identity Namespace `Hackathon namespace 1`. For `Target Field` let's choose `emailMarketingIds` and click `Next` button
+18. Click `Add new mapping`. For `Source Field` let's choose from Identity Namespace `Hackathon namespace 1`. For `Target Field` let's choose `emailMarketingIds` and click `Next` button
     ![Add new Mapping](pictures/hackStep13_0.png?raw=true)
     ![Set Source](pictures/hackStep13_1.png?raw=true)
     ![Set Target](pictures/hackStep13_2.png?raw=true)
     ![Click Next](pictures/hackStep13_3.png?raw=true)  
-14. Click `Finish` button
+19. Click `Finish` button
     ![Click Finish](pictures/hackStep14_0.png?raw=true)  
-15. From the url, get destination instance id (Ex: https://...destination/browse/`8b4deb36-e2d0-40a5-8742-2b42444fff72`/...)
+20. From the url, get destination instance id (Ex: https://...destination/browse/`8b4deb36-e2d0-40a5-8742-2b42444fff72`/...)
     ![Get Destination Instance Id](pictures/hackStep15_0.png?raw=true)  
-16. Go back to Postman and open `[Step5] Test destination`, replace placeholder from the url with the destination_instance_id you got in previous step and execute it;
+21. Go back to Postman and open `[Step5] Test destination`, replace placeholder from the url with the destination_instance_id you got in previous step and execute it;
     ![Test Destination Instance Id](pictures/hackStep16_0.png?raw=true)
     ![Test Destination Instance Id Response](pictures/hackStep16_1.png?raw=true)
-17. Check exported profiles from webhook tab
+22. Check exported profiles from webhook tab
     ![Check Webhook](pictures/hackStep17_0.png?raw=true)
     
 
