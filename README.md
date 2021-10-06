@@ -19,7 +19,6 @@
    ![Postman Collection Overview](pictures/postmanCollection4.png?raw=true)  
 
 5. Import `Hackathon 2021 Env Variables` Environment Variables  
-   ![Postman Environment Variables](pictures/postmanEnvVars1.png?raw=true)
    ![Postman Environment Variables Import](pictures/postmanEnvVars2.png?raw=true)
    ![Postman Environment Variables Drag & Drop](pictures/postmanEnvVars3.png?raw=true)
    ![Postman Environment Variables Finish Import](pictures/postmanEnvVars5.png?raw=true)
