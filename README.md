@@ -102,7 +102,7 @@
    ![Add new Mapping](pictures/hackStep999_0.png?raw=true)
 10. Configure the `SOURCE` field as follows:
    * Press the arrow button next to `Source field`
-     ![Set Target](pictures/hackStep999_1.png?raw=true)
+     ![Set Target](pictures/hackStep999_11.png?raw=true)
    * Next, `Select identity namespace` option as `Source field` and pick `Hackathon namespace 1` value.
     ![Set Source](pictures/hackStep999_4.png?raw=true)
 11. Configure the `TARGET` field as follows:   
