@@ -52,7 +52,7 @@
 2. Your setup from step above should look like this
    ![Create a Destination Server](pictures/hackStep1.png?raw=true)
 3. Run this `POST` API call.  
-   From the successful response (201, Created) `Body` copy the `instanceId` value, since we will use it in the next step.
+   From the successful response (201, Created) `Body` copy the `instanceId` value, since we will use it in the next step.  
 4. To check your destination server was correctly created, open `[Step2] Get destination server` API call.  
    Replace placeholder dummy value from the url with the `instanceId` value copied in the previous step(3).
    ![Get a Destination Server](pictures/hackStep2.png?raw=true)
