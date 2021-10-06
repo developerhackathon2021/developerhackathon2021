@@ -49,13 +49,13 @@
    ![Postman Environment Variables Finish Import](pictures/webHookGenerator2.png?raw=true)
 2. Your setup from step above should look like this
    ![Create a Destination Server](pictures/hackStep1.png?raw=true)
-3. Run this call.  
-   Save the instanceId from the response body, since we will use it in the next step.
-4. Open `[Step2] Get destination server` call.  
-   Replace placeholder from the url with instanceId from the previous step.
+3. Run this `POST` API call.  
+   From the successful response (201, Created) body copy the `instanceId` value, since we will use it in the next step.
+4. To check your destination server was correctly created, open `[Step2] Get destination server` API call.  
+   Replace placeholder dummy value from the url with the `instanceId` value copied in the previous step(3).
    ![Get a Destination Server](pictures/hackStep2.png?raw=true)
-5. Execute this call.       
-   Your output response should be similar to this:
+5. Execute this `GET` API call.       
+   Your output response should be similar to this one:
    ![Get a Destination Server Response](pictures/hackStep22.png?raw=true)  
 6. Open `[Step3] Create destination` call.     
    In the Body call you need to replace : 
